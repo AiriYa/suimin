@@ -1,0 +1,66 @@
+.header{
+    background-color:#dcd5d5;
+}
+.header_menu a{
+    color:black;
+}
+.side_contents{
+    width:200px;
+}
+.side {
+    background-color:white;
+    padding:10px;
+    margin-bottom:10px;flex-basis:12em;
+}
+.side h2{
+    color:white;
+    background-color:rgb(60,48,60);
+    border-radius:8px;
+    font-size:16px;
+    text-align:center;
+    margin:10px;
+}
+.side li{
+    border-bottom:1px dashed;
+    margin:10px;
+    background-image:url(../images/arrow.png);
+    background-repeat:no-repeat;
+    background-position:left center;
+    padding-left:20px;
+}
+.side li:last-child{
+    border-bottom:none;
+}
+.side a{
+    text-decoration:none;
+    color:black;
+}
+main{
+    width:1200px;
+    background-color:white;
+    justify-content:center;
+}
+.main_contents{
+    width:680px;
+    margin:0 25px 0;
+}
+.contents_title{
+    font-weight:normal;
+    text-decoration:underline;
+}
+.information dt{
+    font-weight:bold;
+    width:30%;
+    border-bottom:solid 1px black;
+}
+.information dd{
+    width:80%;
+    border-bottom:solid 1px black;
+    margin-left:0;
+}
+table{
+    border-collapse:collapse;
+}
+.table th, .table td{
+    border:solid 1px black;
+}
