@@ -1,0 +1,120 @@
+body{
+    min-width:1200px;
+    margin:0;
+    padding:0;
+    flex:0;
+    font-family: “游ゴシック“, YuGothic, “ヒラギノ角ゴ Pro W3”, “Hiragino Kaku Gothic Pro”, “メイリオ“, Meiryo, “ＭＳ Ｐゴシック“, “MS PGothic”, sans-serif;
+}
+ul{
+    list-style:none;
+    padding:0;
+}
+a{
+    text-decoration:none;
+}
+.header{
+    padding:20px 0;
+}
+.header_contents{
+    margin:0 auto;
+    padding:0 40px;
+    width:1200px;
+    box-sizing:border-box;
+}
+.header_top{
+    margin:0px auto;
+    padding-bottom:0px;
+    display:flex;
+    justify-content:space-between;
+}
+.logo{
+    margin:0;
+    padding:0;
+}
+.logo img{
+    display:block;
+    width:250px;
+}
+.header_menu{
+    display:flex;
+    align-items:center;
+    margin:0;
+    padding:0;
+}
+.header_menu li:last-child{
+    margin-right:40px;
+}
+.header_menu li{
+    font-weight:bold;
+    margin-right:30px;
+}
+.header_menu li:last-child{
+    margin-right:0;
+}
+.header_menu a:hover{
+    color:gray;
+}
+
+main{
+    display:flex;
+    margin:20px auto 0;
+}
+.main_contents{
+    padding:0;
+}
+.right_contents{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+}
+.right_contents{
+    width:270px;
+    padding:0;
+}
+.right_contents p{
+    color:white;
+    padding-left:40px;
+    background-image:url(../images/event.png);
+    background-repeat:no-repeat;
+    background-position:5px center;
+    background-color:rgb(60,48,60);
+    border-radius:8px;
+    font-size:20px;
+    font-weight:bold;
+    margin:10px;
+}
+.account_contents{
+    border:solid 2px #80808052;
+    width:270px;
+    margin:0;
+    background-color:rgb(255,252,242);
+}
+.advertisement_contents{
+    margin-top:20px;
+}
+.advertisement_contents img{
+    vertical-align:bottom;
+}
+.footer_menu_contents{
+    display:flex;
+    justify-content:center;
+    border-top:solid 2px #80808052;
+    margin:0;
+    padding:40px 0;
+}
+.footer_menu_contents li{
+    padding:0;
+    margin:0 20px;
+}
+.footer_menu_contents li:last-child{
+ margin-right:0;   
+}
+.footer_menu_contents a{
+    color:black;
+}
+.copyright{
+    text-align:center;
+    background-color:#dcd5d5;
+    margin:0;
+    padding:20px 0;
+}
