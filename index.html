@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>TOP</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/top.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header_contents">
+            <div class="header_top">
+                <h1 class="logo">
+                    <a href="TOP.html"><img src="images/minmin.png" alt="minmin"></a>
+                </h1>
+                <ul class="header_menu">
+                    <li><a href="TOP.html">ＴＯＰ</a></li>
+                    <li><a href="concept.html">コンセプト</a></li>
+                    <li><a href="topic.html">トピック</a></li>
+                    <li><a href="ask.html">お問い合わせ</a></li>
+                    <li><a href="about.html">会社概要</a></li>
+                </ul>
+            </div>
+            <h2 class="top_title">
+                <a href="TOP.html"><img src="images/眠眠.png" alt="安定した眠りと、スッキリとした目覚めのために"></a>
+            </h2>
+            <div class="fadein">
+                <p id="fadein" class="fadein-before">私たちは日々の悩みを“スイミン”で解決できることを目指し提供しています</p>
+                <script class="fadein_script">
+                    const FADEIN_ELEM = document.getElementById('fadein');
+                    window.addEventListener('scroll', () => {
+                    const FADEIN_ELEM_TOP = FADEIN_ELEM.getBoundingClientRect().top;
+                    const WINDOW_HEIGHT = window.innerHeight;
+                    if (WINDOW_HEIGHT > (FADEIN_ELEM_TOP + 10)) {
+                    FADEIN_ELEM.classList.add('fadein-after');
+                    }else{
+                    FADEIN_ELEM.classList.remove('fadein-after');
+                    }
+                    });
+                </script>
+            </div>
+            <div class="search_contents">
+                <form class="search_list">
+                    <label>関連施設を探す</label>
+                    <input class="search_text" type="search" name="search" placeholder="エリア(例：札幌、東京)">
+                    <input class="search_text" type="search" name="search" placeholder="キーワードで検索(例：枕 低反発)">
+                    <input class="search_key" type="submit" name="submit" value="検索">
+                </form>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article class="main_contents">
+            <section class="area_container">
+                <div class="area">
+                <h3 class="problem_title">悩みから選ぶ</h3>
+                <div class="problem">
+                    <ul class="problem_name">
+                        <li><a href="#">不眠症</a></li>
+                        <li><a href="#">過眠症</a></li>
+                        <li><a href="#">概日リズムの狂い</a></li>
+                        <li><a href="#">息苦しさ</a></li>
+                        <li><a href="#">その他</a></li>
+                    </ul>
+                </div>
+                </div>
+            </section>
+            <section class="area_container">
+                <div class="area">
+                <h3 class="item_title">アイテムから選ぶ</h3>
+                <ul class="item_list">
+                    <li class="item">
+                        <a href="#">
+                            <div class="animation">
+                                <img src="images/pillow.jpg" alt="枕">
+                            </div>
+                            <div class="genre_text">枕</div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="animation">
+                                <img src="images/mattress.jpg" alt="マットレス">
+                            </div>
+                            <div class="genre_text">マットレス</div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="animation">
+                                <img src="images/futon.jpg" alt="布団">
+                            </div>
+                            <div class="genre_text">掛け布団</div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="animation">
+                                <img src="images/sheet.jpg" alt="シーツ">
+                            </div>
+                            <div class="genre_text">シーツ類</div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="animation">
+                                <img src="images/pajamas.jpg" alt="パジャマ">
+                            </div>
+                            <div class="genre_text">その他</div>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+            </section>
+            <section class="area_container">
+                <div class="area">
+                <h3 class="commitment_title">こだわりで選ぶ</h3>
+                    <ul class="commitment_contents">
+                        <li><a href="#">手触りがいい</a></li>
+                        <li><a href="#">シック</a></li>
+                        <li><a href="#">ポップ</a></li>
+                        <li><a href="#">デザイン性</a></li>
+                        <li><a href="#">カラーバリエーション豊富</a></li>
+                        <li><a href="#">サイズバリエーション豊富</a></li>
+                        <li><a href="#">コスパ</a></li>
+                        <li><a href="#">洗濯機OK</a></li>
+                        <li><a href="#">シルク</a></li>
+                        <li><a href="#">おしゃれ</a></li>
+                        <li><a href="#">芸能人御用達</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="area_container">
+                <div class="area">
+                <h3 class="writer_title">
+                    おすすめの記事<span class="writer_title_explain">ｍｉｎｍｉｎスタッフ おすすめの“スイミン”にまつわる記事を紹介！</span>
+                </h3>
+                <div class="writer_contents">
+                    <div class="writer_contents1">
+                        <div class="writer_img">
+                            <img src="images/diet.jpg" alt="寝スマホ">
+                        </div>
+                        <h4 class="writer_text_title">睡眠でダイエット</h4>
+                        <p class="writer_text_contents">
+                            寝る前に“スマホ”触ってない？？この習慣をやめると寝つきヨシ！寝起きヨシ！！になるって知ってましたか。<br>今回はそんな『睡眠ダイエット』についてご紹介させていただきます。<span class="text"><a href="topic.html#diet">【本文へ】</a></span>
+                        </p>
+                    </div>
+                    <div class="writer_contents1">
+                        <div class="writer_img">
+                            <img src="images/hair.jpg" alt="サラつや髪">
+                        </div>
+                        <h4 class="writer_text_title">枕カバーで美髪・美肌へ！！</h4>
+                        <p class="writer_text_contents">
+                            寝てる間のヘアケアはシルク一択！！<br>シルク100％の枕カバーは美容院帰りのサラサラヘアのような触り心地になる上に、寝心地も上がりまさに一石二鳥の優れモノなんです。<span class="text"><a href="topic.html#hair">【本文へ】</a></span>
+                        </p>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <section class="area_container">
+                <div class="area">
+                <h3 class="review_title">
+                    おすすめ商品レビュー<span class="writer_title_explain">おすすめ商品の実際の使用感をお伝え！</span>
+                </h3>
+                <div class="review_contents">
+                    <div class="review_contents1">
+                        <div class="name_text">
+                            <p class="username">ジロー</p>
+                            <p class="userinformation">女性・沖縄県／那覇店</p>
+                        </div>
+                        <div class="review_text">
+                            <h4 class="review_text_title">締め付けが強いかも。。。</h4>
+                            <p class="review_text_contents">
+                                レビューの高評価に期待して使用してみたのですが、私の頭のサイズには少し小さいような気がしました。<br>肌触りがよく目元は優しく包んでくれますが、締め付け感が強いとずり落ちてくる心配はないものの、起きた時に頭に違和感がしばらく残るので『安眠！！』とまではいかないのでは？大きさの調節ができると幅広い年代にも使用できるので、改善策を提案してみたいと思います。
+                            </p>
+                        </div>
+                        <div class="review_img">
+                            <img src="images/nightcap1.jpg" alt="ヘアケアセット">
+                            <img src="images/nightcap2.jpg" alt="ナイトキャップイラスト">
+                        </div>
+                    </div>
+                    <div class="review_contents1">
+                        <div class="name_text">
+                            <p class="username">あいあい</p>
+                            <p class="userinformation">女性・大阪府／平野店</p>
+                        </div>
+                        <div class="review_text">
+                            <h4 class="review_text_title">触り心地感動！</h4>
+                            <p class="review_text_contents">
+                                納得のいく枕が見つかりました。<br>今まで使用していた枕は収まりが悪く、無意識に枕をどかしてしまっていたのですが『スポッ』と頭がはまることに驚き。またシルク生地の低反発枕となっておりなめらかな触り心地ともちもちの弾力が今まで使用した枕にはない使用感でとても最高の商品です。予備にもう1つ買っておこうか考え中。
+                            </p>
+                        </div>
+                        <div class="review_img">
+                            <img src="images/pillow1.jpg" alt="枕">
+                            <img src="images/pillow2.jpg" alt="枕タグ">
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+        </article>
+        <aside>
+            <div class="right_contents">
+                <p>今月のイベント</p>
+                <ul>
+                    <li class="advertisement_contents">
+                        <a href="#"><img src="images/素敵な寝室.jpg" alt="素敵な寝室を作りませんか？？"></a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+    <footer class="footer">
+        <ul class="footer_menu_contents">
+            <li><a href="TOP.html">ＴＯＰ</a></li>
+            <li><a href="concept.htnl">コンセプト</a></li>
+            <li><a href="topic.html">トピック</a></li>
+            <li><a href="ask.html">お問い合わせ</a></li>
+            <li><a href="about.html">会社概要</a></li>
+        </ul>
+        <p class="copyright"><small>GourmetCamp&copy; ALL Rights Reserved</small></p>
+    </footer>
+</body>
+</html>
