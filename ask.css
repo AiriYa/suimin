@@ -1,0 +1,51 @@
+.header{
+    background-color:#dcd5d5;
+}
+.header_menu a{
+    color:black;
+}
+.side_contents{
+    width:200px;
+}
+.side {
+    background-color:white;
+    padding:10px;
+    margin-bottom:10px;flex-basis:12em;
+}
+.side h2{
+    color:white;
+    background-color:rgb(60,48,60);
+    border-radius:8px;
+    font-size:16px;
+    text-align:center;
+    margin:10px;
+}
+.side li{
+    border-bottom:1px dashed;
+    margin:10px;
+    background-image:url(../images/arrow.png);
+    background-repeat:no-repeat;
+    background-position:left center;
+    padding-left:20px;
+}
+.side li:last-child{
+    border-bottom:none;
+}
+.side a{
+    text-decoration:none;
+    color:black;
+}
+main{
+    width:1200px;
+    background-color:white;
+    justify-content:center;
+}
+.main_contents{
+    width:680px;
+    margin:0 25px 0;
+    box-sizing:border-box;
+    /*widthがあった場合はpaddingを合わさってしまうのでbox-sizingを使用し収まるように指定する*/
+}
+.inquiry_contents_title textarea{
+    border-radius:5px;
+}
